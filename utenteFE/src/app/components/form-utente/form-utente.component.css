@@ -1,0 +1,64 @@
+form {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    background-color: #fff;
+    position: relative;
+    bottom: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #212121;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #181818;
+}
+
+button.cancel-button {
+    background-color: #d32f2f; 
+}
+
+button.cancel-button:hover {
+    background-color: #b71c1c;
+}
+
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+.forms-error {
+    color: red;        /* Imposta il colore del testo a rosso */
+    margin-top: 10px;  /* Aggiunge spazio sopra il messaggio di errore */
+    font-size: 14px;   /* Ridimensiona il testo per mantenere leggibilità */
+  }
+

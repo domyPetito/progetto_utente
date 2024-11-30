@@ -1,0 +1,25 @@
+<form [style.display]="mostraForm ? 'block' : 'none'" #datiutente="ngForm" (ngSubmit)="onSubmit(datiutente)">
+  <label for="nome">Nome:</label>
+  <input matInput type="text" id="nome" name="nome" [(ngModel)]="anagrafePersona.nome" required>
+  
+  <label for="cognome">Cognome:</label>
+  <input matInput type="text" id="cognome" name="cognome" [(ngModel)]="anagrafePersona.cognome" required>
+  
+  <label for="email">Email:</label>
+  <input matInput type="email" id="email" name="email" [(ngModel)]="anagrafePersona.email" required email>
+  
+  <label for="data">Data:</label>
+  <input matInput type="date" id="data" name="data" [(ngModel)]="anagrafePersona.dataDiNascita" required>
+  
+  <div class="form-buttons">
+    <button mat-raised-button type="submit" [disabled]="datiutente.invalid">Invia</button>
+    <button type="button" (click)="onAnnulla()" class="cancel-button">Annulla</button>
+  </div>
+  <div class="forms-error">{{ errorEmail }}</div>
+</form>
+
+
+
+
+  
+

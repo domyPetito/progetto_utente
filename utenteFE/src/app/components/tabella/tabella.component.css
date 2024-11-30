@@ -1,0 +1,70 @@
+div {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.center-title {
+  position: relative;
+  top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 10%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.paginator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-aggiungi {
+  background-color: #212121;
+  color: white;
+}
+
+.btn-aggiungi:hover {
+  background-color: #181818;
+}
+
+
+
+@media (max-width: 800px) {
+
+  div {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .center-title {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .btn-aggiungi {
+    width: 70%;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+
+}
+
+
+
+  
